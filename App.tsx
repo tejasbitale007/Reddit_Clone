@@ -9,7 +9,9 @@ const App = () => {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <MainScreen />
+        <View style={{flex:1}}>
+          <MainScreen />
+        </View>
       </NavigationContainer>
     </Provider>
   )

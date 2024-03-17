@@ -16,17 +16,14 @@
 // export default AppStack
 
 import { View, Text } from 'react-native';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './modules/LoginScreen/LoginScreen';
 import BottomTabs from './BottomTabs';
-import { useDispatch } from 'react-redux';
-import { authenticationValidate } from './redux/asyncAction';
 
 const Stack = createNativeStackNavigator();
 
 const AppStack = () => {
-  
   return (
     <Stack.Navigator screenOptions={{
       headerShown:false

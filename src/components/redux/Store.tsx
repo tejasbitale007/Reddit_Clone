@@ -1,14 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { globalStore } from "./StorageInterface";
 import globalSliceReducer from "./GlobalSlice";
+import { HomeScreen } from "../modules/HomeScreen/redux/StorageInterfce";
+import HomeSliceReducer from "../modules/HomeScreen/redux/HomeSlice";
 
 export interface Store{
-    authentication:globalStore
+    authentication:globalStore,
+    HomeScreen:HomeScreen
 }
 
 export const store = configureStore({
     reducer:{
-            globalSlice:globalSliceReducer
+            authentication:globalSliceReducer,
+            HomeScreen:HomeSliceReducer
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware({
         serializableCheck:false
