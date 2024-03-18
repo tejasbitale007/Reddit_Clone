@@ -5,7 +5,7 @@ import { fetchListing, fetchTopListing } from './redux/asyncAction';
 import { Store } from '../../redux/Store';
 import TopListing from './molecule/TopListing';
 import NewListing from './molecule/NewListing';
-import BestListing from './molecule/bestListing';
+import BestListing from './molecule/BestListing';
 
 const HomeScreen = () => {
   return (
